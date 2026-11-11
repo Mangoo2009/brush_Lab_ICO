@@ -50,7 +50,7 @@ class Product(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     category_id: Mapped[int] = mapped_column(ForeignKey("categories.id"))
-    supplier: Mapped[int]
+    supplier_id: Mapped[int]
     name: Mapped[str]
     description: Mapped[str]
     price: Mapped[int]
@@ -60,8 +60,8 @@ class Product(Base):
     stock: Mapped[int]
     status: Mapped[str]
     photo: Mapped[str]
-    is_active: Mapped[str]
-    created_at: Mapper[datetime] = mapped_column(DateTime, default=func.now())
+    is_active: Mapped[bool] = mapped_column(default=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=func.now())
 
 class Users(Base):
     __tablename__ = "users"
@@ -73,7 +73,7 @@ class Users(Base):
     password_hash: Mapped[str]
     role: Mapped[str]
     balance: Mapped[int]
-    created_at: Mapped[datetime] = mapped_column(DateTime, default=func.nov())
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=func.now())
     surname: Mapped[str]
 
-Base.metadata.create_all()
+Base.metadata.create_all(bind=engine)

@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68739b2b-3b8c-4b42-9684-05bc856b4ad9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/brush Lab ICO.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/shopping.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/auth_login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/auth_registrate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/catalog.html" afterDir="false" />
+    <list default="true" id="68739b2b-3b8c-4b42-9684-05bc856b4ad9" name="Changes" comment="vze">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/catalog.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -94,9 +84,36 @@
       <option name="presentableId" value="Default" />
       <updated>1794288974748</updated>
     </task>
+    <task id="LOCAL-00001" summary="vze">
+      <option name="closed" value="true" />
+      <created>1794377191063</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1794377191063</updated>
+    </task>
+    <task id="LOCAL-00002" summary="vze">
+      <option name="closed" value="true" />
+      <created>1794378539666</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1794378539666</updated>
+    </task>
+    <task id="LOCAL-00003" summary="vze">
+      <option name="closed" value="true" />
+      <created>1794379840857</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1794379840857</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="vze" />
+    <option name="LAST_COMMIT_MESSAGE" value="vze" />
   </component>
 </project>

@@ -51,23 +51,16 @@
 
 
 <div class="catalog">
-  <section class="card" style="max-width: 290px">
-    <img src="/img/shopping.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h4 class="card-title">щетка</h4>
-      <p class="card-text">Описание, хорошая щетка</p>
-      <a href="#" class="btn-solid theme-primary">Купить</a>
-    </div>
-  </section>
-
-  <section class="card" style="max-width: 290px">
-    <img src="/img/shopping.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h4 class="card-title">Щетка (другая)</h4>
-      <p class="card-text">Описание щетки(другой), хорошая щетка(другая)</p>
-      <a href="#" class="btn-solid theme-primary">Купить (другую щетку)</a>
-    </div>
-  </section>
+  {% for prod in products %}
+    <section class="card " style="max-width: 290px">
+      <img src="{{prod.photo}}" class="card-img-top" alt="Щетка">
+      <div class="card-body">
+        <h4 class="card-title">{{ prod.name }}</h4>
+        <p class="card-text">{{ prod.description }}</p>
+        <a href="#" class="btn-solid theme-primary">Купить</a>
+      </div>
+    </section>
+  {% endfor %}
 </div>
 
 <footer>
