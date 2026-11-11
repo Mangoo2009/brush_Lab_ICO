@@ -28,8 +28,8 @@ class Order_Items(Base):
     __tablename__ = "order_items"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    order_id: Mapped[int]
-    product_id: Mapped[int]
+    order_id: Mapped[int] = mapped_column(ForeignKey("orders.id"))
+    product_id: Mapped[int] = mapped_column(ForeignKey("products.id"))
     price: Mapped[int]
     color: Mapped[str]
     material: Mapped[str]
@@ -49,7 +49,7 @@ class Product(Base):
     __tablename__ = "products"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    category_id: Mapped[int]
+    category_id: Mapped[int] = mapped_column(ForeignKey("categories.id"))
     supplier: Mapped[int]
     name: Mapped[str]
     description: Mapped[str]
@@ -59,3 +59,21 @@ class Product(Base):
     bristle_type: Mapped[str]
     stock: Mapped[int]
     status: Mapped[str]
+    photo: Mapped[str]
+    is_active: Mapped[str]
+    created_at: Mapper[datetime] = mapped_column(DateTime, default=func.now())
+
+class Users(Base):
+    __tablename__ = "users"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    name: Mapped[str]
+    phone: Mapped[int]
+    email: Mapped[str]
+    password_hash: Mapped[str]
+    role: Mapped[str]
+    balance: Mapped[int]
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=func.nov())
+    surname: Mapped[str]
+
+Base.metadata.create_all()
