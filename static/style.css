@@ -1,0 +1,18 @@
+.login {
+  max-width: 340px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+footer {
+  padding: 20px 20px;
+}
